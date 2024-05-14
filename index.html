@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      background-color: #d3d3d34a;
+    }
+    section {
+      display: flex;
+      align-items: center;
+    }
+    .container {
+      height: 100vh;
+    }
+    .container > .primaryImage {
+      height: 100vh;
+    }
+
+    .container > .secContainer {
+      position: absolute;
+      top: 20%;
+      width: 33.33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        color: #fff;
+        font-size: 46px;
+      }
+    }
+    .container > .secContainer > .secondaryImage {
+      width: 20%;
+    }
+    .elements > .header {
+      margin: 0 2rem;
+      h2 {
+        font-size: 34px;
+        width: 80%;
+      }
+      p {
+        font-size: 34px;
+      }
+    }
+    .elements > .form {
+      background-color: #fff;
+      padding: 2rem;
+      -webkit-box-shadow: 5px 12px 15px -1px #adadad;
+      box-shadow: 5px 12px 15px -1px #adadad;
+      h1 {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+    }
+    .left,
+    .right {
+      display: flex;
+
+      input {
+        border: 1px solid lightgray;
+        border-radius: 5px;
+      }
+    }
+    .button {
+      margin: 2rem;
+
+      button {
+        background-color: green;
+        border: none;
+        color: #fff;
+        padding: 1rem 4rem;
+        font-size: 18px;
+        border-radius: 10px;
+
+        &:hover {
+          -webkit-box-shadow: 5px 12px 15px -1px #adadad;
+          box-shadow: 5px 12px 15px -1px #adadad;
+        }
+      }
+      h3 > a {
+        text-decoration: none;
+        color: green;
+      }
+    }
+  </style>
+  <body>
+    <section>
+      <div class="container">
+        <img
+          src="assets/fore-ground-img.jpg"
+          alt="Foreground Image"
+          class="primaryImage"
+        />
+        <div class="secContainer">
+          <img src="assets/odin-lined.png" alt="Odin" class="secondaryImage" />
+          <h1>ODIN</h1>
+        </div>
+      </div>
+      <div class="elements">
+        <div class="header">
+          <h2>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Signup
+            now to get started.
+          </h2>
+          <p>You know you want to</p>
+        </div>
+        <div class="form">
+          <h1>Let's do this</h1>
+          <div class="formContainer">
+            <div class="left">
+              <label for="text">FIRST NAME</label><input type="text" />
+              <label for="text">FIRST NAME</label><input type="text" />
+              <label for="text">FIRST NAME</label><input type="text" />
+            </div>
+            <div class="right">
+              <label for="text">FIRST NAME</label><input type="text" />
+              <label for="text">FIRST NAME</label><input type="text" />
+              <label for="text">FIRST NAME</label><input type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="button">
+          <button>Create Account</button>
+
+          <h3>Already have an account? <a href="">Login</a></h3>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
